@@ -1,0 +1,9 @@
+<?php
+
+$conn = @mysql_connect('localhost','root','');
+if (!$conn) {
+	die('Could not connect: ' . mysql_error());
+}
+mysql_select_db('panier_cadeau', $conn) or die ('Mysql Error : No Database selected . Please contact DBA for more informations ---------- Inext Server Error ---------');
+
+?>
